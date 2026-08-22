@@ -1,1 +1,3 @@
 # ITCS102_CODE_RESPORITORY
+Jemaika Mae P. Ondon 
+026A-14449
