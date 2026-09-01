@@ -1,31 +1,31 @@
-money = 14568
+money = int(input('Enter amount --> '))
 
-a = money//1000
+k = money//1000
 money = money % 1000
-b = money//500
+five_h = money//500
 money = money % 500
-c = money//200
+two_h = money//200
 money = money % 200
-d = money//100
+one_h = money//100
 money = money % 100
-e = money//50 
+fives = money//50 
 money = money % 50
-f = money//20
+twos = money//20
 money = money % 20
-g = money//10
+ten = money//10
 money = money % 10
-h = money//5
+five = money//5
 money = money % 5
-i = money//1
+one = money//1
 money = money % 1
 
 print("\n\t\t\tMoney to Deposit -->",money)
-print("\n\t\t\t1000 -",a)
-print("\t\t\t500 -",b)
-print("\t\t\t200 -",c)
-print("\t\t\t100 -",d)
-print("\t\t\t50 -",e)
-print("\t\t\t20 -",f)
-print("\t\t\t10 -",g)
-print("\t\t\t5 -",h)
-print("\t\t\t1 -",i)
+print("\n\t\t\t1000 -",k)
+print("\t\t\t500 -",five_h)
+print("\t\t\t200 -",two_h)
+print("\t\t\t100 -",one_h)
+print("\t\t\t50 -",fives)
+print("\t\t\t20 -",twos)
+print("\t\t\t10 -",ten)
+print("\t\t\t5 -",five)
+print("\t\t\t1 -",one)
