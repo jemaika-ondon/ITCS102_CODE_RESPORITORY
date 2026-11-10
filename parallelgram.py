@@ -1,4 +1,5 @@
-n = 5
+n = int(input('Enter a Number: '))
+
 for x in range(n):
     for y in range(n):
         print(' ', end=' ')
