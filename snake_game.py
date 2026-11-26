@@ -141,7 +141,7 @@ while running:
                 if new_head == food:
                     SPEED = SPEED + 1 
                 else:
-                    pass
+                    SPEED = SPEED + 1
             if grow > 0:
                 grow = grow - 1                              # keep the tail: snake grows
             else:
