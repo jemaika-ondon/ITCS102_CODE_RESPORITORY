@@ -109,13 +109,13 @@ while running:
                 elif event.key == pygame.K_q:                # Q = quit
                     running = False
             # The "!=" checks stop the snake from turning back into itself
-            elif event.key == pygame.K_UP and direction != (0, 1):
+            elif event.key in (pygame.K_UP, pygame.K_w) and direction != (0, 1):
                 direction = (0, -1)
-            elif event.key == pygame.K_DOWN and direction != (0, -1):
+            elif event.key in (pygame.K_DOWN, pygame.K_s) and direction != (0, -1):
                 direction = (0, 1)
-            elif event.key == pygame.K_LEFT and direction != (1, 0):
+            elif event.key in (pygame.K_LEFT, pygame.K_a) and direction != (1, 0):
                 direction = (-1, 0)
-            elif event.key == pygame.K_RIGHT and direction != (-1, 0):
+            elif event.key in (pygame.K_RIGHT, pygame.K_d) and direction != (-1, 0):
                 direction = (1, 0)
 
     # ---- 2. UPDATE: move the snake and check what happened ----
@@ -138,6 +138,10 @@ while running:
                 score = score + POINTS_PER_FOOD
                 grow = grow + GROW_PER_FOOD
                 food = place_food(snake)
+                if new_head == food:
+                    SPEED = SPEED + 1 
+                else:
+                    pass
             if grow > 0:
                 grow = grow - 1                              # keep the tail: snake grows
             else:
