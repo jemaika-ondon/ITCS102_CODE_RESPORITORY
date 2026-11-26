@@ -135,13 +135,10 @@ while running:
         if not game_over:
             snake.insert(0, new_head)                        # add the new head
             if new_head == food:                             # ate the food
+                SPEED = SPEED + 2
                 score = score + POINTS_PER_FOOD
                 grow = grow + GROW_PER_FOOD
                 food = place_food(snake)
-                if new_head == food:
-                    SPEED = SPEED + 1 
-                else:
-                    SPEED = SPEED + 1
             if grow > 0:
                 grow = grow - 1                              # keep the tail: snake grows
             else:
